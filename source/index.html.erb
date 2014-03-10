@@ -1,10 +1,440 @@
----
-title: Welcome to Middleman
----
+﻿	<article id="pickup" class="onerow">
+		<section class="col6"><a class="fancybox" rel="pickup" href="#1_drheli"><img src="images/0_drheli.jpg" alt="ドクヘリがやってくる！"></a></section>
+		<section class="col6 last"><a class="fancybox" rel="pickup" href="#5_lecture"><img src="images/0_lecture.jpg" alt="田中教授無料講演会"></a></section>
+	</article>
 
-<div class="welcome">
-  <h1>Middleman is Watching</h1>
-  <p class="doc">
-    <%= link_to "Read Online Documentation", "http://middlemanapp.com/" %>
-  </p><!-- .doc -->
-</div><!-- .welcome -->
+	<article class="onerow">
+		<div class="col12">
+			<section id="options" class="clearfix combo-filters">
+				<h3>企画チェッカー</h3>
+				<p>各企画の時間・部門・会場をお選びいただけます。また、各企画をクリックすることで詳しい情報を表示します。</p>
+				<div class="option-combo time">
+					<h4>時間</h4>
+					<ul class="filter option-set clearfix " data-filter-group="time"> 
+						<li><a href="#filter-time-any" data-filter-value="" class="selected">全時間</a>
+						<li><a href="#filter-time-limited" data-filter-value=".limited">時間限定</a>
+						<li><a href="#filter-time-always" data-filter-value=".always">終日</a>
+					</ul>
+				</div>
+				<div class="option-combo department">
+					<h4>部門</h4>
+					<ul class="filter option-set clearfix " data-filter-group="department"> 
+						<li><a href="#filter-department-any" data-filter-value="" class="selected">全部門</a>
+						<li><a href="#filter-department-d1" data-filter-value=".d1">救急部門</a>
+						<li><a href="#filter-department-d2" data-filter-value=".d2">科学体験教室</a>
+						<li><a href="#filter-department-d3" data-filter-value=".d3">検査部門</a>
+						<li><a href="#filter-department-d4" data-filter-value=".d4">ハンディキャップ部門</a>
+						<li><a href="#filter-department-d5" data-filter-value=".d5">講演会</a>
+						<li><a href="#filter-department-d6" data-filter-value=".d6">特別企画</a>
+						<li><a href="#filter-department-d7" data-filter-value=".d7">コラボ企画</a>
+					</ul>
+				</div>
+				<div class="option-combo area">
+					<h4>会場</h4>
+					<ul class="filter option-set clearfix " data-filter-group="area"> 
+						<li><a href="#filter-area-any" data-filter-value="" class="selected">全会場</a>
+						<li><a href="#filter-area-waterfall" data-filter-value=".waterfall">噴水</a>
+						<li><a href="#filter-area-frate" data-filter-value=".frate">フラテ会館</a>
+						<li><a href="#filter-area-library" data-filter-value=".library">医学部図書館</a>
+					</ul>
+				</div>
+			</section> <!-- #options -->
+
+			<section id="container" class="clearfix">
+				<div class="igakuten-festival waterfall d1 limited"><a class="fancybox" rel="group" href="#1_drheli"><img src="images/1_drheli.jpg" alt="ドクターヘリ見学会"></a></div>
+				<div class="igakuten-festival waterfall d1 limited"><a class="fancybox" rel="group" href="#1_ambulance"><img src="images/1_ambulance.jpg" alt="民間救急車の見学"></a></div>
+				<div class="igakuten-festival library d1 always"><a class="fancybox" rel="group" href="#1_cpr"><img src="images/1_cpr.jpg" alt="心肺蘇生講習"></a></div>
+				<div class="igakuten-festival waterfall d1 limited"><a class="fancybox" rel="group" href="#1_db"><img src="images/1_db.jpg" alt="献血のお願い"></a></div>
+				<div class="igakuten-festival frate d2 always"><a class="fancybox" rel="group" href="#2_lung_model"><img src="images/2_lung_model.jpg" alt="肺の模型を作ろう！"></a></div>
+				<div class="igakuten-festival frate d2 always"><a class="fancybox" rel="group" href="#2_taste"><img src="images/2_taste.jpg" alt="味覚の不思議"></a></div>
+				<div class="igakuten-festival frate d2 always"><a class="fancybox" rel="group" href="#2_bmi"><img src="images/2_bmi.jpg" alt="脳波で遊ぼう！"></a></div>
+				<div class="igakuten-festival frate d2 always"><a class="fancybox" rel="group" href="#2_cell"><img src="images/2_cell.jpg" alt="細胞を顕微鏡で見よう！"></a></div>
+				<div class="igakuten-festival library d3 always"><a class="fancybox" rel="group" href="#3_heart"><img src="images/3_heart.jpg" alt="心臓の検査"></a></div>
+				<div class="igakuten-festival library d3 always"><a class="fancybox" rel="group" href="#3_lung"><img src="images/3_lung.jpg" alt="肺の検査"></a></div>
+				<div class="igakuten-festival library d3 always"><a class="fancybox" rel="group" href="#3_eye"><img src="images/3_eye.jpg" alt="目の検査"></a></div>
+				<div class="igakuten-festival library d3 always"><a class="fancybox" rel="group" href="#3_five"><img src="images/3_five.jpg" alt="5年生企画"></a></div>
+				<div class="igakuten-festival waterfall d4 limited"><a class="fancybox" rel="group" href="#4_dog"><img src="images/4_dog.jpg" alt="盲導犬講習"></a></div>
+				<div class="igakuten-festival library d4 always"><a class="fancybox" rel="group" href="#4_sound"><img src="images/4_sound.jpg" alt="聴覚体験"></a></div>
+				<div class="igakuten-festival waterfall d4 limited"><a class="fancybox" rel="group" href="#4_wheelchair"><img src="images/4_wheelchair.jpg" alt="車いす体験"></a></div>
+				<div class="igakuten-festival frate d5 limited"><a class="fancybox" rel="group" href="#5_lecture"><img src="images/5_lecture.jpg" alt="田中教授無料講演会"></a></div>
+				<div class="igakuten-festival frate d7 always"><a class="fancybox" rel="group" href="#7_hospital"><img src="images/7_hospital.jpg" alt="ぬいぐるみ病院"></a></div>
+				<div class="igakuten-festival library d7 always"><a class="fancybox" rel="group" href="#7_international_cafe"><img src="images/7_international_cafe.jpg" alt="国際カフェ"></a></div>
+				<div class="igakuten-festival library d7 always"><a class="fancybox" rel="group" href="#7_curry"><img src="images/7_curry.jpg" alt="東医研カレー"></a></div>
+				<div class="igakuten-festival library d7 always"><a class="fancybox" rel="group" href="#7_scora"><img src="images/7_scora.jpg" alt="SCORA企画"></a></div>
+				<div class="igakuten-festival waterfall frate library d6 always"><a class="fancybox" rel="group" href="#6_stamps"><img src="images/6_stamps.jpg" alt="スタンプラリー"></a></div>
+			</section><!-- #container -->
+
+			<section id="inline_contents">
+				<div id="1_drheli">
+					<h1 style="text-align:center;">ドクヘリがやってくる！</h1>
+					<p>絶体絶命のピンチ、刻一刻を争う現場…<br>ドクターヘリはそんな現場に急行します。<br>救いたい命があるから。救わなければならない命があるから。<br>ドクターヘリは、命と希望を最速で運ぶ使命を担っています。</p>
+					<p>そんなドクターヘリが遂に医学展にやってきます！！！</p>
+					<p><span style="color:#ff4500;">ドクヘリに乗ってみよう！<br>ドクヘリとツーショットを撮ろう！<br>ドクヘリで空を飛ぼう！（←これは無理笑）</span></p>
+					<p>ドクターヘリは救急医療の要であり、北海道のように広大な地域では必須の存在です。<br>今回、医学展では手稲渓仁会病院、中日本航空、北大病院救急部の全面協力のもと、<br>ドクターヘリを誘致し、医学展にご来場いただいた皆様に完全開放します！！！</p>
+					<p>ぜひ医学展でドクターヘリの勇姿をご覧ください！ご搭乗もできます！</p>
+					<p>そして、もしお子様がドクヘリで空を飛びたいと言ったときには、<br>ぜひ北大医学部の門を叩かせてあげてください。<br>私たちはその夢を全力で応援するとともに、<br>そんな夢を抱いてもらえるように日々精進していく所存です。</p>
+					<p>では、皆様とドクヘリと医学展でお会いできる日を心より楽しみにしております。</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>時間未定 医学部 噴水前</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>時間未定 医学部 噴水前</dd>
+						<dd>※時間は決定次第お知らせ致します。</dd>
+						<dd>※緊急の出動時には、医学展スタッフの指示にしたがって速やかにドクターヘリよりお離れください。</dd>
+					</dl>
+				</div>
+
+				<div id="1_ambulance">
+					<h1 style="text-align:center;">民間救急車がやってくる！</h1>
+					<p>北海道で活躍する民間救急車が医学展にやってきます！</p>
+					<p><span style="color:#ff4500;">消防署の救急車とどう違うの？<br>救急車の中ってどうなってるの？<br>救急車に乗ってみたい！</span></p>
+					<p>そんな疑問・要望にお応えします！お気軽にお立ち寄りください！</p>
+					<p>救急車の適正利用、そして民間救急車の存在とその凄さを知っていただければ幸いです。</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>時間未定 医学部 噴水周辺</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>時間未定 医学部 噴水周辺</dd>
+						<dd>※時間は決定次第お知らせ致します。</dd>
+					</dl>
+				</div>
+
+				<div id="1_cpr">
+					<h1 style="text-align:center;">心肺蘇生講習</h1>
+					<p>ある日、突然目の前で人が倒れた…。<br>こんな場面に出会う可能性は誰にでもあります。<br>交通事故、通勤ラッシュの時、スポーツの大会、レクリエーションで出掛けた時…</p>
+					<p>そんな時、意識を失った人を助けることができるのは、<br>そばにいない医師ではなく、そばにいるあなたです。<br>あなたにしかできないことです。<br>あなただからこそ、できることです。<br>心肺蘇生とAEDによる適切な初期救急を行うことで、蘇生率をあげることができます。</p>
+					<p>今日では、医療技術の発達とAEDの普及によって、多くの突然死を防いでいます。<br>しかし、人を救うのは高度な医療技術でも機械でもありません。<br><span style="color:#ff4500;">人を救うのは人であって、あなたのほんの少しの勇気と心肺蘇生の経験なのです。</span></p>
+					<p>救急医療チームでは、しっかりとした事前研修を行い、<br>万全の態勢で心肺蘇生講習会を開催します！<br>様々な応急処置の手法も実演を交えてご紹介いたします。</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 2階</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 2階</dd>
+					</dl>
+				</div>
+
+				<div id="1_db">
+					<h1 style="text-align:center;">献血のお願い</h1>
+					<p>献血にご協力をお願い致します。</p>
+					<p>科学が進歩した現代においても、人工血液をつくることは極めて困難です。<br><span style="color:#ff4500;">輸血は多くの方々の献血によって支えられている医療です。</span></p>
+					<p>お時間がありましたら、お気軽に立ち寄って頂けますと大変助かります。<br>献血して頂いた皆様には、粗品を献上しております。<br>どうぞ宜しくお願い致します。</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>時間未定 医学部 噴水周辺</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>時間未定 医学部 噴水周辺</dd>
+						<dd>※時間は決定次第お知らせ致します。</dd>
+					</dl>
+				</div>
+
+				<div id="2_lung_model">
+					<h1 style="text-align:center;">肺の模型を作ろう！</h1>
+					<p><span style="color:#ff4500;">手軽な工作を楽しんで、肺の仕組みを学ぼう！</span><br>昨年から始まった大好評企画を今年もやります！</p>
+					<p>肺の仕組みとよく似ているモデルを、ペットボトルを使って10分で作ります！<br>作った肺の模型は記念にお持ち帰りいただけます。<br>（※持ち物は不要です。すべて医学展で用意しています。）</p>
+					<p>「息を吸う・息を吐く」とは、どういうことなのか分かりやすく説明します。<br>完成した肺モデルでも、空気が移動する仕組みが実感できて、<br>ちょっぴり手を動かして学べて、とっても面白いですよ！</p>
+					<p></p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 フラテ会館 大研修室</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 フラテ会館 大研修室</dd>
+					</dl>
+				</div>
+
+				<div id="2_taste">
+					<h1 style="text-align:center;">味覚の不思議</h1>
+					<p><span style="color:#ff4500;">レモンが甘くなって、砂糖の甘さがなくなる！？</span></p>
+					<p>摩訶不思議な食べ物「ミラクルフルーツ」と「ギムネマ茶」を試食！！！<br>味覚の不思議さとともに、味覚の大切さも感じられる企画です。</p>
+					<p>ちなみに、ミラクルフルーツは前田あっちゃんも食べてます！</p>
+					<p><iframe src="http://instagram.com/p/gb8QbDiYgC/embed/" width="306" height="355" frameborder="0" scrolling="no" allowtransparency="true"></iframe></p>
+					<p>↑あっちゃんの公式インスタグラムより。</p>
+					<p>なぜ味が変わるの？ダイエットにも使える？<br>そんな素朴な疑問にも医学展スタッフが丁寧にお答えします！</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 フラテ会館 大研修室</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 フラテ会館 大研修室</dd>
+					</dl>
+				</div>
+
+				<div id="2_bmi">
+					<h1 style="text-align:center;">脳波で遊ぼう！</h1>
+					<p>脳波を検出して遊ぶおもちゃを様々なバリエーションでご用意しています！</p>
+					<p>集中したり、ぼんやりしたりして楽しむおもちゃ！？<br>人は不思議なもので、何も考えないようにしようとすると<br>考え事をしてしまったり、逆に集中しようとするとできなかったり。<br><span style="color:#ff4500;">思いのほか難しくて、笑いの漏れるおもちゃです。</span></p>
+					<p>小さなお子様から年配の方まで、老若男女みなが楽しめるおもちゃですので、<br>ぜひ医学展に遊びに来てください！！！</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 フラテ会館 大研修室</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 フラテ会館 大研修室</dd>
+					</dl>
+				</div>
+
+				<div id="2_cell">
+					<h1 style="text-align:center;">細胞を顕微鏡で見よう！</h1>
+					<p>人の体は、約60兆個の細胞からできていると言われています。<br>この企画では、細胞を取り出し、染色し、顕微鏡で観察します。<br><span style="color:#ff4500;">神秘的で奥の深い細胞の世界をのぞくと、そこには……！？</span></p>
+					<p>細胞という小さな存在に想いを馳せてみませんか？</p>
+					<p></p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 フラテ会館 大研修室</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 フラテ会館 大研修室</dd>
+					</dl>
+				</div>
+
+				<div id="3_heart">
+					<h1 style="text-align:center;">心臓の検査</h1>
+					<p>医療ドラマでよく見かけるあの名シーン。<br>実際に体験してみませんか？</p>
+					<p><span style="color:#ff4500;">心電図検査と心エコーを体験できます。<span></p>
+					<p>どうやって検査するの？どういう仕組みなの？お値段は？などなど<br>普段、病院では尋ねにくい素朴な疑問に分かりやすくお答えします！</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 2階</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 2階</dd>
+					</dl>
+				</div>
+
+				<div id="3_lung">
+					<h1 style="text-align:center;">肺の検査</h1>
+					<p><span style="color:#ff4500;">肺活量を測定できます。</span><br>我こそは！と思う方、ぜひチャレンジしてみてください！</p>
+					<p>また、呼吸器系の病気についても解説します。<br>最近急増しているCOPDって、いったい何なのでしょうか？？</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 2階</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 2階</dd>
+					</dl>
+				</div>
+
+				<div id="3_eye">
+					<h1 style="text-align:center;">目の検査</h1>
+					<p>目の様々な検査を体験できます。</p>
+					<p>近視？遠視？乱視？<br>眼科でよく行う、気球やヨットの写真を見るあの検査、<br>いったい何を調べているの？？？<br>コンタクトレンズの仕組みは？<br>眼科チームがズバリお答えします！</p>
+					<p>「目に見えるものは、世界の一部でしかない」―<br>今年ナンバーワン映画との呼び声も高いとある映画のキャッチフレーズです。<br><span style="color:#ff4500;">私たちは、目に見えないものも大切にできる医療者を目指します。</span></p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 2階</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 2階</dd>
+					</dl>
+				</div>
+
+				<div id="3_five">
+					<h1 style="text-align:center;">5年生企画</h1>
+					<p><span style="color:#ff4500;">5年生チームは、外科手技など臨床医学に近い企画を提供します。</span></p>
+					<p>あと1年半で医師の現場に出る医学生たちです。<br>厳しいご批評とエールをお送りください！</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 2階</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 2階</dd>
+					</dl>
+				</div>
+
+				<div id="4_dog">
+					<h1 style="text-align:center;">盲導犬講習</h1>
+					<p><span style="color:#ff4500;">実際に盲導犬と歩いてみませんか？</span></p>
+					<p>北海道盲導犬協会さんの全面協力のもと、<br>盲導犬について簡単な講習会を実施します！</p>
+					<p>目が不自由だとどのような生活になるのか、<br>想いを馳せていただければ幸いです。</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部 噴水周辺</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部 噴水周辺</dd>
+						<dd>※時間は決定次第お知らせ致します。</dd>
+					</dl>
+				</div>
+
+				<div id="4_sound">
+					<h1 style="text-align:center;">聴覚体験</h1>
+					<p>難聴には、大きく分けて感音性難聴と伝音性難聴の二種類があります。<br><span style="color:#ff4500;">音声キットで再現した、音の様々な聴こえ方を体験できます。</span></p>
+					<p>北海道大学のノートテイカーという活動もご紹介します。</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 3階</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 3階</dd>
+					</dl>
+				</div>
+
+				<div id="4_wheelchair">
+					<h1 style="text-align:center;">車いす体験</h1>
+					<p>車いすに実際に乗っていただく体験会を行います！</p>
+					<p>車いすの乗り方や押し方など一から丁寧にご説明します。</p>
+					<p><span style="color:#ff4500;">噴水の周りを車いすで回ってみましょう！</span></p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部 噴水周辺</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部 噴水周辺</dd>
+						<dd>※雨天時には中止となることがあります。</dd>
+					</dl>
+				</div>
+
+				<div id="5_lecture">
+					<h1 style="text-align:center;">田中教授無料講演会</h1>
+					<p>毎年大好評の講演会企画。<br>本年度は、<span style="color:#ff4500;">「北大のがん博士」こと北大医学部の田中伸哉教授</span>がご講演します！</p>
+					<p>田中教授は、<span style="color:#ff4500;">腫瘍病理学がご専門で、がんに対して非常に造詣の深い</span>方です。<br><span style="color:#ff4500;">北海道新聞に連載「がんの教室」</span>を持ち、多くの愛読者がいらっしゃいます。<br>また、田中教授は毎年、<span style="color:#ff4500;">母校の札幌北高校で講演</span>を行われており、<br>田中教授の話を聴いて北大医学部を目指した学生もいるほど大人気です。</p>
+					<p>北大医学部でがんを研究されている教授のお話を聴くことができる、またとない貴重な機会です。<br>完全無料で実施します。沢山の方のご来場を心よりお待ちしております。</p>
+					<p>当日席もございますが、5月中旬より予約を受け付けます。<br>大変な混雑が予想されますので、ぜひご予約をお願い申し上げます。<br>予約の開始時期・方法につきましては、近日中にお知らせいたします。</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>13：30 開場、14：00 開始（予定） フラテ会館 フラテ大ホール</dd>
+					</dl>
+				</div>
+
+				<div id="7_hospital">
+					<h1 style="text-align:center;">ぬいぐるみ病院</h1>
+					<p>国際医療系団体IFMSA（イフムサ）JAPANの一部門SCOPH（スコフ）と医学展の夢のコラボ企画！</p>
+					<p>ぬいぐるみを使って「お医者さんごっこ」をすることで<br>子どもたちの病院に対する恐怖感を和らげるとともに、<br>「お医者さん」について知ってもらえたらと考えております。</p>
+					<p><span style="color:#ff4500;">ネギちゃんのように可愛いぬいぐるみを沢山ご用意しております。</span><br>お子さんとともに是非お越しください。</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 2階</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 2階</dd>
+					</dl>
+				</div>
+
+				<div id="7_international_cafe">
+					<h1 style="text-align:center;">国際カフェ</h1>
+					<p>国際連携室と医学展の夢のコラボ企画！</p>
+					<p>北大では数多くの留学生も学んでいます。<br><span style="color:#ff4500;">そんな留学生のみんなが、存分に腕を奮って自慢の母国料理を振る舞います！</span></p>
+					<p>市民と留学生、医学生の交流の場を創り出します。<br>温かい食卓とともにくつろぎのひとときをお過ごしください。</p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 南側レクリエーションスペース</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 南側レクリエーションスペース</dd>
+					</dl>
+				</div>
+
+				<div id="7_curry">
+					<h1 style="text-align:center;">東医研カレー</h1>
+					<p>北大東洋医学研究会と医学展の夢のコラボ企画！</p>
+					<p>近年ますます関心が高まっている漢方医学に親しむことができる、<br>東洋医学研究会の研究発表に乞うご期待！<br>気？血？水？なにそれ？？？なんの話？<br>葛根湯って風邪に効くよね？本当はどんな風邪に効くの！？<br>少しだけ漢方医学に詳しくなれます！</p>
+					<p>そして、毎年恒例の大人気企画『東医研カレー』を今年も振る舞います！<br>初めての方にも、リピーターの方にも、この本場の味を届けたい！！！<br><span style="color:#ff4500;">ミルクで割ったチャイとともに、スパイスの心地良く効いた薬膳カレーをどうぞ！</span></p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 3階</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 3階</dd>
+						<dd>※カレー、チャイは毎年完売しておりますので、お早めにお越しくださいませ。</dd>
+					</dl>
+				</div>
+
+				<div id="7_scora">
+					<h1 style="text-align:center;">SCORA企画</h1>
+					<p>国際医療系団体IFMSA（イフムサ）JAPANの一部門SCORA（スコラ）と医学展の夢のコラボ企画！</p>
+					<p>内容は当日までひ・み・つ！</p>
+					<p><span style="color:#ff4500;">「お・も・て・な・し」の心で、丁寧に創り上げます。「お・た・の・し・み」に！</span></p>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 医学部図書館 3階</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 医学部図書館 3階</dd>
+					</dl>
+				</div>
+
+				<div id="6_stamps">
+					<h1 style="text-align:center;">スタンプラリー</h1>
+					<p>皆様にもっと医学展を楽しんでもらうために、スランプラリーを開催します！</p>
+					<p>スタンプを4種類集めると、<span style="color:#ff4500;">医学展でしか手に入らないレアグッズ</span>をプレゼントします！</p>
+					<h2>参加方法</h2>
+					<ol>
+						<li>フラテ会館、医学部図書館の入口にある案内所で、スタンプの台紙をもらおう！</li>
+						<li>スタンプをゲットできるのは、次の4か所。
+							<ul>
+								<li>救急部門</li>
+								<li>科学体験教室＆ぬいぐるみ病院</li>
+								<li>検査部門</li>
+								<li>ハンディキャップ部門</li>
+							</ul>
+						</li>
+						<li>スタンプを4種類集めたら、フラテ会館（噴水の奥）の案内所で景品と交換してね。</li>
+					</ol>
+					<hr>
+					<dl>
+						<dt>日時・会場</dt>
+						<dd><span style="color:#00f;font-weight:bold;">6/7（土）</span>10：00～17：30 ほぼ全ての会場</dd>
+						<dd><span style="color:#f00;font-weight:bold;">6/8（日）</span>9：00～16：30 ほぼ全ての会場</dd>
+						<dd>景品は十分な数を用意しておりますが、なくなり次第交換を終了させて頂きます。<br>あらかじめご了承ください。</dd>
+					</dl>
+				</div>
+
+			</section>
+		</div>
+	</article>
+
+	<article class="onerow">
+		<section class="col6">
+			<div class="igakun">
+				<p><img src="images/igakun60x76.png" alt="いがくん">みなさん、はじめまして。<br>ぼくの名前は「いがくん」<br>みんなと北大医学部をつなぐために生まれたんだ。<br>ぼくと一緒に北大医学部のお祭り「医学展」を楽しもう！&emsp;⇒<a href="igakun.html">「マスコット」</a></p>
+			</div>
+		</section>
+		<section class="col3">
+			<div class="info">
+				<h3>新着情報</h3>
+				<dl>
+					<dt><time>2014/04/01</time></dt>
+					<dd>公式サイトがオープンしました！</dd>
+				</dl>
+			</div>
+		</section>
+		<section class="col3 last">
+			<div class="info">
+			<h3>各種ダウンロード(PDF)</h3>
+				<ul>
+					<li><a href="" target="_blank">タイムテーブル</a></li>
+					<li><a href="" target="_blank">会場地図</a></li>
+					<li><a href="" target="_blank">パンフレット</a></li>
+				</ul>
+			</div>
+		</section>
+	</article>
+
+<script>
+  $(function(){
+    
+    var $container = $('#container'),
+        filters = {};
+
+    $container.isotope({
+      itemSelector : '.igakuten-festival',
+      mansory: {
+        columnWidth: 80
+      }
+    });
+
+    // filter buttons
+    $('.filter a').click(function(){
+      var $this = $(this);
+      // don't proceed if already selected
+      if ( $this.hasClass('selected') ) {
+        return;
+      }
+      
+      var $optionSet = $this.parents('.option-set');
+      // change selected class
+      $optionSet.find('.selected').removeClass('selected');
+      $this.addClass('selected');
+      
+      // store filter value in object
+      // i.e. filters.color = 'red'
+      var group = $optionSet.attr('data-filter-group');
+      filters[ group ] = $this.attr('data-filter-value');
+      // convert object into array
+      var isoFilters = [];
+      for ( var prop in filters ) {
+        isoFilters.push( filters[ prop ] )
+      }
+      var selector = isoFilters.join('');
+      $container.isotope({ filter: selector });
+
+      return false;
+    });
+  });
+</script>

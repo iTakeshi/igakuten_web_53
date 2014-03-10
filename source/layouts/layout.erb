@@ -1,4 +1,4 @@
-<!doctype html>
+﻿<!doctype html>
 <html>
   <head>
     <meta charset="utf-8">
@@ -8,12 +8,62 @@
     
     <!-- Use title if it's in the page YAML frontmatter -->
     <title><%= current_page.data.title || "The Middleman" %></title>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+		<meta name="description" content="第53回医学展の公式ウェブサイトです。2014年6月7日（土）、8日（日）に北大医学部で開催します。">
+		<meta name="author" conctent="北海道大学医学展実行委員会">
+		<meta name="copyright" content="Copyright (C) 北海道大学医学展実行委員会 2013-2014">
     
-    <%= stylesheet_link_tag "normalize", "all" %>
-    <%= javascript_include_tag  "all" %>
+    <%= stylesheet_link_tag "normalize", "onepcssgrid", "jquery.fancybox", "all" %>
+		<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+    <%= javascript_include_tag  "jquery.isotope.min", "jquery.fancybox.pack", "all" %>
   </head>
   
   <body class="<%= page_classes %>">
+
+	<div id="grobal_container" class="onepcssgrid-1000">
+
+	<header class="onerow">
+	<hgroup>
+		<h1 class="col6"><img src="images/header800x129.jpg" alt=""></h1>
+		<h2 class="col6 last">☆2014年<span class="em">6</span>月<span class="em sat">7</span>日・<span class="em sun">8</span>日＠<span class="em">北大医学部</span><br>☆入場料：<span class="em">無料</span><a href="https://twitter.com/igakuten" target="_blank"><img src="images/twitter.png" alt="twitter" id="twitter"></a><a href="https://www.facebook.com/hokudai.igakuten" target="_blank"><img src="images/facebook.png" alt="facebook" id="facebook"></a></h2>
+	</hgroup>
+	<nav id="cssmenu" class="col12">
+		<ul>
+			<li><a href="index.html">トップページ</a></li>
+			<li><a href="message.html">ご挨拶</a></li>
+			<li class="has-sub"><a href="festival.html">企画のご紹介</a>
+				<ul>
+					<li><a href="festival.html#">救急部門</a></li>
+					<li><a href="festival.html#">科学体験教室</a></li>
+					<li><a href="festival.html#">検査部門</a></li>
+					<li><a href="festival.html#">ハンディキャップ部門</a></li>
+					<li><a href="festival.html#">講演会</a></li>
+					<li><a href="festival.html#">特別企画</a></li>
+					<li><a href="festival.html#">コラボ企画</a></li>
+				</ul>
+			</li>
+			<li><a href="lecture.html">講演会情報</a></li>
+			<li><a href="igakun.html">マスコット</a></li>
+			<li><a href="access.html">会場案内</a></li>
+		</ul>
+	</nav>
+	</header>
+
     <%= yield %>
+
+	<footer class="onerow">
+		<div class="col12">
+			<img src="images/igakun200x116.jpg" alt="マスコットキャラクター「いがくん」">
+			<small>Copyright (C) 北海道大学医学部医学科 医学展実行委員会 2013-2014</small>
+		</div>
+	</footer>
+	</div><!-- #grobal_container -->
+
+	<script type="text/javascript">
+		$(function(){
+			$('.fancybox').fancybox();
+		});
+	</script>
+
   </body>
 </html>

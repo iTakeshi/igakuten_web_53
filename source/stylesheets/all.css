@@ -435,6 +435,46 @@ div.igakun span.event {
 	color: #000;
 }
 
+/* igakun_pr
+---------------------------------------------- */
+.igakun_pr {
+	padding: 10px;
+	line-height: 2;
+	text-align: center;
+}
+
+.igakun_pr h3 {
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #eaffea;
+	font-size: 16px;
+}
+
+.igakun_pr p {
+	text-align: center;
+	line-height: 1.1;
+}
+
+.igakun_pr img {
+	width: 150px;
+	display: inline-block;
+}
+
+.igakun_pr dt,
+.igakun_pr dd {
+	padding-top: 8px;
+	border-bottom: 1px dashed #0f0;
+}
+
+.igakun_pr dt {
+	width: 135px;
+	float: left;
+}
+
+.igakun_pr dd {
+	margin-left: 150px;
+}
+
 /* info
 ---------------------------------------------- */
 div.info {

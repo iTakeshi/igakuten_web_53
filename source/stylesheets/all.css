@@ -379,22 +379,12 @@ header h2 img#facebook {
 	margin-left: 30px;
 }
 
-.igakuten-festival img {
+.igakuten-festival img,
+.igakuten-festival p {
 	width: 225px;
 	height: 225px;
 	margin: 5px;
 	float: left;
-}
-
-.igakuten-festival img:hover {
-	opacity: 0.7;
-}
-
-#inline_contents {
-	display: none;
-}
-
-#inline_contents div p {
 }
 
 @media (max-width: 768px) {
@@ -492,9 +482,15 @@ div.info h3 {
 	font-size: 16px;
 }
 
+/* festival_pr
+---------------------------------------------- */
+.festival_pr img {
+	width: 20%;
+	display: inline;
+}
+
 /* footer
 ---------------------------------------------- */
-
 footer{
 	min-height: 200px;
 }

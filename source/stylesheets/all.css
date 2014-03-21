@@ -26,6 +26,10 @@ a:active {
 
 a img { border: none; }
 
+article {
+	overflow: hidden;
+}
+
 /* header
 ---------------------------------------------- */
 
@@ -486,19 +490,41 @@ div.info h3 {
 /* footer
 ---------------------------------------------- */
 footer{
-	min-height: 200px;
+	margin-top: 30px;
+	overflow: hidden;
+	background: #ecf0f1;
+	-webkit-border-radius: 20px 20px 0 0;
+	border-radius: 20px 20px 0 0;
+	font-size: 14px;
+}
+
+footer h1 {
+	margin-left: 10px;
+	padding: 10px 15px;
+	background: #fff;
+	-webkit-border-radius: 20px;
+	border-radius: 20px;
+	font-size: 16px;
+}
+
+footer p,
+footer dl {
+	margin-left: 10px;
 }
 
 footer img {
 	max-width: 200px;
 	display: block;
-	margin: 30px auto 10px;
+	margin: 20px auto 10px;
 	-webkit-border-radius: 20px;
 	border-radius: 20px;
 }
 
 footer small {
-	display: block;
-	text-align: center;
+	margin-bottom: 20px;
+	font-size: 14px;
 	color: #999;
+	text-align: center;
+	line-height: 1.8;
+	display: block;
 }

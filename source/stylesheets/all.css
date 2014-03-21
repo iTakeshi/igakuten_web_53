@@ -208,16 +208,6 @@ header h2 img#facebook {
   }
 }
 
-/* pickup
----------------------------------------------- */
-#pickup {
-	padding-top: 15px;
-}
-
-#pickup img:hover {
-	opacity: 0.7;
-}
-
 /* isotope
 ---------------------------------------------- */
 /* Start: Recommended Isotope styles */
@@ -482,11 +472,15 @@ div.info h3 {
 	font-size: 16px;
 }
 
-/* festival_pr
+/* festival
 ---------------------------------------------- */
-.festival_pr img {
-	width: 20%;
-	display: inline;
+.festival-wrapper h1 {
+	text-align: center;
+}
+
+.festival-wrapper img {
+	width: 225px;
+	float: right;
 }
 
 /* footer

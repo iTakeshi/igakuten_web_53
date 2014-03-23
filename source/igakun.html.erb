@@ -14,20 +14,22 @@
 		<section class="col6">
 			<div class="igakun_pr">
 				<h3>1年前のまだ幼いいがくん</h3>
-				<p>
-					<a class="fancybox" rel="group" href="images/igakun_01a.jpg" title="いがくんの行灯"><img src="images/igakun_01b.jpg" alt="いがくんの行灯"></a>
-					<a class="fancybox" rel="group" href="images/igakun_02a.jpg" title="いがくんの行灯＠噴水前"><img src="images/igakun_02b.jpg" alt="いがくんの行灯＠噴水前"></a>
-					<a class="fancybox" rel="group" href="images/igakun_03a.jpg" title="いがくんの行灯＠噴水前"><img src="images/igakun_03b.jpg" alt="いがくんの行灯＠噴水前"></a>
-					<a class="fancybox" rel="group" href="images/igakun_04a.jpg" title="いがくんの行灯＠噴水前"><img src="images/igakun_04b.jpg" alt="いがくんの行灯＠噴水前"></a>
-					<a class="fancybox" rel="group" href="images/igakun_05a.jpg" title="いがくんの看板＠医学部図書館前"><img src="images/igakun_05b.jpg" alt="いがくんの看板＠医学部図書館前"></a>
-					<a class="fancybox" rel="group" href="images/igakun_06a.jpg" title="いがくんの看板＠医学部図書館前"><img src="images/igakun_06b.jpg" alt="いがくんの看板＠医学部図書館前"></a>
-					<a class="fancybox" rel="group" href="images/igakun_07a.jpg" title="いがくんのうちわ（昨年のシールラリーの景品です）"><img src="images/igakun_07b.jpg" alt="いがくんのうちわ（昨年のシールラリーの景品）"></a>
-					<a class="fancybox" rel="group" href="images/igakun_08a.jpg" title="いがくんと盲導犬"><img src="images/igakun_08b.jpg" alt="いがくんと盲導犬"></a>
-					<a class="fancybox" rel="group" href="images/igakun_09a.jpg" title="いがくんと救急車"><img src="images/igakun_09b.jpg" alt="いがくんと救急車"></a>
-					<a class="fancybox" rel="group" href="images/igakun_10a.jpg" title="いがくんと心電図"><img src="images/igakun_10b.jpg" alt="いがくんと心電図"></a>
-					<a class="fancybox" rel="group" href="images/igakun_11a.jpg" title="いがくんと脳波"><img src="images/igakun_11b.jpg" alt="いがくんと脳波"></a>
-					<a class="fancybox" rel="group" href="images/igakun_12a.jpg" title="昨年のシールラリー（今年はスランプラリーです）"><img src="images/igakun_12b.jpg" alt="昨年のシールラリー"></a>
-				</p>
+				<ul class="rslides">
+					<li><img src="images/igakun01.jpg" alt="いがくんの行灯1"></li>
+					<li><img src="images/igakun02.jpg" alt="いがくんの行灯2"></li>
+					<li><img src="images/igakun03.jpg" alt="いがくんの行灯3"></li>
+					<li><img src="images/igakun04.jpg" alt="いがくんの看板1"></li>
+					<li><img src="images/igakun05.jpg" alt="いがくんの看板2"></li>
+					<li><img src="images/igakun06.jpg" alt="パンフレットの裏"></li>
+					<li><img src="images/igakun07.jpg" alt="うちわの表"></li>
+					<li><img src="images/igakun08.jpg" alt="うちわの裏"></li>
+					<li><img src="images/igakun09.jpg" alt="いがくんと盲導犬"></li>
+					<li><img src="images/igakun10.jpg" alt="いがくんと救急車"></li>
+					<li><img src="images/igakun11.jpg" alt="いがくんと心電図"></li>
+					<li><img src="images/igakun12.jpg" alt="いがくんと脳波"></li>
+					<li><img src="images/igakun13.jpg" alt="いがくんのシール台紙"></li>
+					<li><img src="images/igakun14.jpg" alt="いがくんからプレゼント"></li>
+				</ul>
 			</div>
 		</section>
 		<section class="col6 last">
@@ -49,3 +51,24 @@
 			</div>
 		</section>
 	</article>
+
+<script>
+$(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 3000,          // Integer: Time between slide transitions, in milliseconds
+  pager: true,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "490",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+</script>

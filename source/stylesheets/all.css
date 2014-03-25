@@ -213,12 +213,8 @@ header h2 img#facebook {
   }
 }
 
-/*
+/* responsive slider
 ---------------------------------------------- */
-#pager img {
-	width: 100px;
-}
-
 .rslides_tabs {
   list-style: none;
   padding: 0;
@@ -265,10 +261,23 @@ header h2 img#facebook {
   color: #2ecc71;
   }
 
-.rslides_here img {
-	border: 3px solid #999;
+#pager li {
+	width: 100px;
+	height: 50px;
 }
 
+#pager img {
+	width: 100px;
+	border: 3px solid #fff;
+}
+
+#pager img:hover {
+	border: 3px solid #bdc3c7;
+}
+
+#pager .rslides_here img {
+	border: 3px solid #2ecc71;
+}
 
 /* isotope
 ---------------------------------------------- */

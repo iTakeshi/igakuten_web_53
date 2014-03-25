@@ -1,4 +1,27 @@
 ﻿	<article class="onerow">
+		<section class="col12">
+			<ul class="rslides">
+				<li><a href="festival.html"><img src="images/slide1.jpg" alt=""></a></li>
+				<li><a href="festival-emergency.html"><img src="images/slide2.jpg" alt=""></a></li>
+				<li><a href="lecture.html"><img src="images/slide3.jpg" alt=""></a></li>
+				<li><a href="festival-science.html"><img src="images/slide4.jpg" alt=""></a></li>
+				<li><a href="festival-examination.html"><img src="images/slide5.jpg" alt=""></a></li>
+				<li><a href="festival-hc.html"><img src="images/slide6.jpg" alt=""></a></li>
+				<li><a href="festival-special.html"><img src="images/slide7.jpg" alt=""></a></li>
+			</ul>
+			<ul id="pager">
+				<li><a href="#"><img src="images/slide1_thumb.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/slide2_thumb.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/slide3_thumb.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/slide4_thumb.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/slide5_thumb.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/slide6_thumb.jpg" alt=""></a></li>
+				<li><a href="#"><img src="images/slide7_thumb.jpg" alt=""></a></li>
+			</ul>
+		</section>
+	</article>
+
+	<article class="onerow">
 		<section class="col6">
 			<div class="igakun">
 				<p><img src="images/igakun60x76.png" alt="いがくん">みなさん、はじめまして。<br>ぼくの名前は「いがくん」<br>みんなと北大医学部をつなぐために生まれたんだ。<br>ぼくと一緒に北大医学部のお祭り「医学展」を楽しもう！&emsp;⇒<a href="igakun.html">「マスコット」</a></p>
@@ -24,3 +47,24 @@
 			</div>
 		</section>
 	</article>
+
+<script>
+$(".rslides").responsiveSlides({
+  auto: true,             // Boolean: Animate automatically, true or false
+  speed: 500,            // Integer: Speed of the transition, in milliseconds
+  timeout: 4000,          // Integer: Time between slide transitions, in milliseconds
+  pager: false,           // Boolean: Show pager, true or false
+  nav: false,             // Boolean: Show navigation, true or false
+  random: false,          // Boolean: Randomize the order of the slides, true or false
+  pause: false,           // Boolean: Pause on hover, true or false
+  pauseControls: true,    // Boolean: Pause when hovering controls, true or false
+  prevText: "Previous",   // String: Text for the "previous" button
+  nextText: "Next",       // String: Text for the "next" button
+  maxwidth: "1000",           // Integer: Max-width of the slideshow, in pixels
+  navContainer: "",       // Selector: Where controls should be appended to, default is after the 'ul'
+  manualControls: "#pager",     // Selector: Declare custom pager navigation
+  namespace: "rslides",   // String: Change the default namespace used
+  before: function(){},   // Function: Before callback
+  after: function(){}     // Function: After callback
+});
+</script>

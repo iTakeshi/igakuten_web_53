@@ -531,10 +531,30 @@ div.info h3 {
 	font-size: 16px;
 }
 
-/* festival
+/* message-wrapper, festival-wrapper
 ---------------------------------------------- */
+.message-wrapper {
+	width: 90%;
+	margin: 20px auto;
+	padding: 20px;
+	border: 3px dotted #2ecc71;
+	-webkit-border-radius: 30px;
+	border-radius: 30px;
+}
+
+.message-wrapper h1,
 .festival-wrapper h1 {
 	text-align: center;
+}
+
+.message-wrapper h2 {
+	text-align: center;
+	font-size: 16px;
+	font-weight: 400;
+}
+
+.message-wrapper p {
+	text-indent: 1em;
 }
 
 .festival-wrapper img {
@@ -554,7 +574,8 @@ footer{
 }
 
 footer h1 {
-	margin-left: 10px;
+	margin-left: 7px;
+	margin-right: 2px;
 	padding: 10px 15px;
 	background: #fff;
 	-webkit-border-radius: 20px;

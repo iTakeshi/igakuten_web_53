@@ -264,19 +264,23 @@ header h2 img#facebook {
 #pager li {
 	width: 100px;
 	height: 50px;
+	background: #fff;
 }
 
 #pager img {
 	width: 100px;
 	border: 3px solid #fff;
+	opacity: 0.3;
 }
 
 #pager img:hover {
 	border: 3px solid #bdc3c7;
+	opacity: 1.0;
 }
 
 #pager .rslides_here img {
 	border: 3px solid #2ecc71;
+	opacity: 1.0;
 }
 
 /* isotope
@@ -361,7 +365,7 @@ header h2 img#facebook {
 
 #options li {
   float: left;
-  margin-bottom: 4px;
+  margin-bottom: 8px;
 }
 
 #options li a {

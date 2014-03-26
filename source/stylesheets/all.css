@@ -465,10 +465,6 @@ header h2 img#facebook {
 	text-indent: 10px;
 }
 
-.igakuten-festival div span {
-	/*font-weight: 700;*/
-}
-
 @media (max-width: 768px) {
   #container {
     margin-left: 0;

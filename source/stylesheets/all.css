@@ -566,6 +566,41 @@ div.info h3 {
 	float: right;
 }
 
+/* lecture
+---------------------------------------------- */
+#lecture_abstract {
+	text-align: center;
+}
+
+#lecture_abstract h2 {
+	font-size: 28px;
+}
+
+#lecture_abstract p {
+	font-size: 18px;
+	line-height: 1.6;
+	font-weight: bold;
+}
+
+.lecture_pr h3 {
+	margin-top: 30px;
+	padding-left: 12px;
+	border-left: 8px solid #2ecc71;
+	border-bottom: 2px solid #2ecc71;
+}
+
+.lecture_pr img {
+	width: 200px;
+	margin: 10px auto;
+	padding: 3px;
+	border: 1px solid #95a5a6;
+}
+
+.lecture_pr .time {
+	display: inline-block;
+	width: 145px;
+}
+
 /* footer
 ---------------------------------------------- */
 footer{

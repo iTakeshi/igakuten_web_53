@@ -663,3 +663,11 @@ footer small {
 	line-height: 1.8;
 	display: block;
 }
+
+/* Scroll to Top Button
+---------------------------------------------- */
+#pageTop {
+	position:fixed;
+	bottom:20px;
+	right:20px;
+}

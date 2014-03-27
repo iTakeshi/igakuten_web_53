@@ -671,3 +671,7 @@ footer small {
 	bottom:20px;
 	right:20px;
 }
+
+#pageTop:hover {
+	background: url('../images/arrow2.png') no-repeat;
+}

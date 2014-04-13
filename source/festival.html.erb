@@ -9,7 +9,7 @@
 					<p>医学展は全<strong>21</strong>企画をご用意しております。気になる企画をチェック！</p>
 					<div class="option-combo time">
 						<h4>時間</h4>
-						<ul class="filter option-set clearfix " data-filter-group="time"> 
+						<ul class="filter option-set clearfix " data-filter-group="time">
 							<li><a href="#filter-time-any" data-filter-value="" class="selected">全時間</a>
 							<li><a href="#filter-time-limited" data-filter-value=".limited">時間限定</a>
 							<li><a href="#filter-time-always" data-filter-value=".always">終日</a>
@@ -17,7 +17,7 @@
 					</div>
 					<div class="option-combo department">
 						<h4>部門</h4>
-						<ul class="filter option-set clearfix " data-filter-group="department"> 
+						<ul class="filter option-set clearfix " data-filter-group="department">
 							<li><a href="#filter-department-any" data-filter-value="" class="selected">全部門</a>
 							<li><a href="#filter-department-d1" data-filter-value=".d1">救急部門</a>
 							<li><a href="#filter-department-d2" data-filter-value=".d2">科学体験教室</a>
@@ -30,7 +30,7 @@
 					</div>
 					<div class="option-combo area">
 						<h4>会場</h4>
-						<ul class="filter option-set clearfix " data-filter-group="area"> 
+						<ul class="filter option-set clearfix " data-filter-group="area">
 							<li><a href="#filter-area-any" data-filter-value="" class="selected">全会場</a>
 							<li><a href="#filter-area-waterfall" data-filter-value=".waterfall">噴水</a>
 							<li><a href="#filter-area-frate" data-filter-value=".frate">フラテ会館</a>
@@ -39,7 +39,7 @@
 					</div>
 					<div class="option-combo area">
 						<h4>説明</h4>
-						<ul class="filter option-set clearfix " data-filter-group="description"> 
+						<ul class="filter option-set clearfix " data-filter-group="description">
 							<li><a href="#filter-description-any" data-filter-value="" class="selected">説明ON</a>
 							<li><a href="#filter-description-photo" data-filter-value=".photo">説明OFF</a>
 						</ul>
@@ -53,7 +53,7 @@
 				<div class="igakuten-festival waterfall d1 limited"><div><p>ついに医学展にドクヘリがやってきます！かっこいいドクヘリを近くで見よう！この貴重な機会をお見逃しなく！</p><span>日時：6/8　9：30 集合<br>場所：北大医学部 噴水前</span></div></div>
 
 				<div class="igakuten-festival waterfall d1 limited photo"><a href="festival-emergency.html#ambulance"><img src="images/1_ambulance.jpg" alt="民間救急車の見学"></a></div>
-				<div class="igakuten-festival waterfall d1 limited"><div><p>民間救急車のこと知ってますか？実は、さまざまなところで活躍している民間救急車が医学展にやってきます。間近で見よう！</p><span>日時：6/7・8　時間未定<br>場所：北大医学部 噴水周辺</span></div></div>
+				<div class="igakuten-festival waterfall d1 limited"><div><p>民間救急車のこと知ってますか？実は、さまざまなところで活躍している民間救急車が医学展にやってきます。間近で見よう！</p><span>日時：6/7・8 12:00-14:00<br>場所：北大医学部 噴水周辺</span></div></div>
 
 				<div class="igakuten-festival library d1 always photo"><a href="festival-emergency.html#cpr"><img src="images/1_cpr.jpg" alt="心肺蘇生講習"></a></div>
 				<div class="igakuten-festival library d1 always"><div><p>心肺蘇生と応急処置の講習会を開催します。もしものとき助けることができるのは、そばにいない医師ではなく、そばにいるあなたです。</p><span>日時：6/7・8　10～17時頃<br>場所：医学部図書館 2F</span></div></div>
@@ -118,7 +118,7 @@
 
 <script>
   $(function(){
-    
+
     var $container = $('#container'),
         filters = {};
 
@@ -136,12 +136,12 @@
       if ( $this.hasClass('selected') ) {
         return;
       }
-      
+
       var $optionSet = $this.parents('.option-set');
       // change selected class
       $optionSet.find('.selected').removeClass('selected');
       $this.addClass('selected');
-      
+
       // store filter value in object
       // i.e. filters.color = 'red'
       var group = $optionSet.attr('data-filter-group');

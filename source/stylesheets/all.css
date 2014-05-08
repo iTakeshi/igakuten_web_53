@@ -219,8 +219,8 @@ header h2 img#facebook {
                     }
                   }
 
-                  /* responsive slider
-                  ---------------------------------------------- */
+ /* responsive slider
+---------------------------------------------- */
 .rslides_tabs {
   list-style: none;
   padding: 0;
@@ -621,7 +621,7 @@ div.info h3 {
 }
 
 .lecture_pr img {
-  width: 200px;
+  width: 225px;
   margin: 10px auto;
   padding: 3px;
   border: 1px solid #95a5a6;

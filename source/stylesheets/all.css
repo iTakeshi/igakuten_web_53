@@ -659,6 +659,37 @@ background: linear-gradient(to bottom, #2ECC71 0%, #fff 100%);
   width: 145px;
 }
 
+/* supporters
+---------------------------------------------- */
+div.supporter {
+	margin: 10px 3px;
+	padding: 10px;
+	border: 1px dotted #27ae60;
+	-webkit-border-radius: 5px;
+	border-radius: 5px;
+	background: #eaffea;
+	text-align: center;
+}
+
+.appreciation h1 {
+	text-align: center;
+	font-size: 24px;
+}
+
+.appreciation p {
+	text-align: right;
+	font-weight: bold;
+	font-size: 24px;
+}
+
+div.supporter a {
+	display: block;
+}
+
+div.supporter:hover {
+	border-style: solid;
+}
+
 /* footer
 ---------------------------------------------- */
 footer{

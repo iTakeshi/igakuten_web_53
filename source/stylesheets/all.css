@@ -561,9 +561,24 @@ div.info h3 {
   width: 90%;
   margin: 20px auto;
   padding: 20px;
-  border: 3px dotted #2ecc71;
   -webkit-border-radius: 30px;
   border-radius: 30px;
+background: -webkit-gradient(
+	linear,
+	left top,
+	left bottom,
+	color-stop(0, #2ECC71),
+	color-stop(1, #fff)
+);
+background: -o-linear-gradient(bottom, #2ECC71 0%, #fff 100%);
+background: -moz-linear-gradient(bottom, #2ECC71 0%, #fff 100%);
+background: -webkit-linear-gradient(bottom, #2ECC71 0%, #fff 100%);
+background: -ms-linear-gradient(bottom, #2ECC71 0%, #fff 100%);
+background: linear-gradient(to bottom, #2ECC71 0%, #fff 100%);
+}
+
+.message-wrapper h1 {
+	font-size: 30px;
 }
 
 .message-wrapper h1,
@@ -575,6 +590,18 @@ div.info h3 {
   text-align: center;
   font-size: 16px;
   font-weight: 400;
+}
+
+.message-wrapper h2 img {
+	width: 180px;
+	margin: 0 auto;
+}
+
+.message-wrapper h3 img {
+	width: 221px;
+	margin: 0 auto;
+	padding: 3px;
+	border: 1px solid #ecf0f1;
 }
 
 .message-wrapper p {

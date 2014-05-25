@@ -624,6 +624,17 @@ background: linear-gradient(to bottom, #2ECC71 0%, #fff 100%);
   display: block;
 }
 
+.mainstreet {
+	margin: 5px 0;
+	padding: 5px;
+	overflow: hidden;
+	background: #fffacd;
+	border: 1px dotted #f39c12;
+	-webkit-border-radius: 10px;
+	border-radius: 10px;
+	text-align: center;
+}
+
 /* lecture
 ---------------------------------------------- */
 #lecture_abstract {

@@ -48,7 +48,23 @@
   </section>
 </article>
 
+<div id="last-message" style="text-align:center;">
+	<h1 style="color:#27ae60;">第53回北大医学展は終了致しました。</h1>
+	<p>たくさんのご来場ありがとうございました。<br>また来年、北大医学部で会える日を楽しみにしています。</p>
+	<p><img src="images/igakun_and_medy.jpg" src="" style="border-radius:50%;"></p>
+	<p>落し物に関しましては、下記までお問い合わせ下さい。</p>
+	<p>北大祭事務局</p>
+	<dl style="max-width:350px;margin:0 auto;">
+		<dt style="float:left;">電&emsp;話：</dt><dd>011-709-5037 (9:00～22:00)</dd>
+		<dt style="float:left;">メール：</dt><dd>hufアットマークhokudaisai.com</dd>
+	</dl>
+</div>
+
 <script>
+	$(window).load(function(){
+		$.fancybox.open($('#last-message'));
+	});
+
   $(".rslides").responsiveSlides({
     auto: true,             // Boolean: Animate automatically, true or false
   speed: 500,            // Integer: Speed of the transition, in milliseconds
